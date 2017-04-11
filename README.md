@@ -1,0 +1,153 @@
+# test coverage for  [convict (v3.0.0)](https://github.com/mozilla/node-convict)  [![npm package](https://img.shields.io/npm/v/npmtest-convict.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-convict) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-convict.svg)](https://travis-ci.org/npmtest/node-npmtest-convict)
+#### Unruly configuration management for Node.js
+
+[![NPM](https://nodei.co/npm/convict.png?downloads=true)](https://www.npmjs.com/package/convict)
+
+| git-branch : | [alpha](https://github.com/npmtest/node-npmtest-convict/tree/alpha)|
+|--:|:--|
+| coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-convict/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-convict/build/coverage.html/index.html)|
+| test-report : | [![test-report](https://npmtest.github.io/node-npmtest-convict/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-convict/build/test-report.html)|
+| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-convict/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-convict/tree/gh-pages/build)|
+
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-convict/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-convict/build/coverage.html/index.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-convict/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-convict%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-convict/build/test-report.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-convict/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-convict%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-convict/build/apidoc.html)
+
+![npmPackageListing](https://npmtest.github.io/node-npmtest-convict/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmtest.github.io/node-npmtest-convict/build/screenCapture.npmPackageDependencyTree.svg)
+
+
+
+# package.json
+
+```json
+
+{
+    "author": {
+        "name": "Lloyd Hilaiel",
+        "email": "lloyd@hilaiel.com",
+        "url": "http://lloyd.io"
+    },
+    "browserify": {
+        "transform": [
+            "varify"
+        ]
+    },
+    "bugs": {
+        "url": "https://github.com/mozilla/node-convict/issues"
+    },
+    "dependencies": {
+        "depd": "1.1.0",
+        "json5": "0.5.1",
+        "lodash.clonedeep": "4.5.0",
+        "minimist": "1.2.0",
+        "moment": "2.17.1",
+        "validator": "7.0.0",
+        "varify": "0.2.0"
+    },
+    "description": "Unruly configuration management for Node.js",
+    "devDependencies": {
+        "coveralls": "2.12.0",
+        "eslint": "3.17.1",
+        "istanbul": "0.4.5",
+        "mocha": "3.2.0",
+        "mocha-lcov-reporter": "1.3.0",
+        "must": "0.13.4",
+        "obj_diff": "0.3.0"
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "259f30bfb87ee0944860486203519d467b4d51b5",
+        "tarball": "https://registry.npmjs.org/convict/-/convict-3.0.0.tgz"
+    },
+    "engines": {
+        "node": ">=4"
+    },
+    "files": [
+        "lib",
+        "npm-shrinkwrap.json"
+    ],
+    "gitHead": "78d9621562c15f6234bf65f5212ed9859176cebe",
+    "homepage": "https://github.com/mozilla/node-convict",
+    "keywords": [
+        "configuration",
+        "config",
+        "key value store",
+        "schema",
+        "nested",
+        "validation"
+    ],
+    "license": "Apache-2.0",
+    "main": "lib/convict.js",
+    "maintainers": [
+        {
+            "name": "6a68",
+            "email": "ohai@6a68.net"
+        },
+        {
+            "name": "fmarier",
+            "email": "francois@fmarier.org"
+        },
+        {
+            "name": "lloyd",
+            "email": "lloyd@hilaiel.com"
+        },
+        {
+            "name": "ozten",
+            "email": "shout@ozten.com"
+        },
+        {
+            "name": "rfkelly",
+            "email": "rfkelly@mozilla.com"
+        },
+        {
+            "name": "seanmonstar",
+            "email": "sean.monstar@gmail.com"
+        },
+        {
+            "name": "stomlinson",
+            "email": "shane@shanetomlinson.com"
+        },
+        {
+            "name": "vladikoff",
+            "email": "vlad@vladikoff.com"
+        },
+        {
+            "name": "zaach",
+            "email": "zack.carter@gmail.com"
+        }
+    ],
+    "name": "convict",
+    "optionalDependencies": {
+        "varify": "0.2.0"
+    },
+    "readme": "ERROR: No README data found!",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mozilla/node-convict.git"
+    },
+    "scripts": {
+        "clean": "rm -rf test/coverage",
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix .",
+        "posttest": "npm run lint",
+        "posttest:ci": "npm run lint",
+        "posttest:coverage": "npm run lint",
+        "preversion": "./assert_shrinkwrap_ready",
+        "safefreeze": "rm -rf node_modules npm-shrinkwrap.json && npm install --production --registry https://registry.npmjs.org/ && npm dedupe && npm shrinkwrap && npm install && npm test && touch package.json npm-shrinkwrap.json",
+        "test": "mocha --check-leaks -R spec",
+        "test:ci": "istanbul cover _mocha -- --check-leaks test/*-tests.js && cat test/coverage/lcov.info | coveralls",
+        "test:coverage": "istanbul cover _mocha -- --check-leaks test/*-tests.js",
+        "version": "./assert_changelog_ready $npm_package_version"
+    },
+    "version": "3.0.0"
+}
+```
+
+
+
+# misc
+- this document was created with [utility2](https://github.com/kaizhu256/node-utility2)
