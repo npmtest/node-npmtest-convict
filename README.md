@@ -1,7 +1,10 @@
-# test coverage for  [convict (v3.0.0)](https://github.com/mozilla/node-convict)  [![npm package](https://img.shields.io/npm/v/npmtest-convict.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-convict) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-convict.svg)](https://travis-ci.org/npmtest/node-npmtest-convict)
+# npmtest-convict
+
+#### test coverage for  [convict (v3.0.0)](https://github.com/mozilla/node-convict)  [![npm package](https://img.shields.io/npm/v/npmtest-convict.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-convict) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-convict.svg)](https://travis-ci.org/npmtest/node-npmtest-convict)
+
 #### Unruly configuration management for Node.js
 
-[![NPM](https://nodei.co/npm/convict.png?downloads=true)](https://www.npmjs.com/package/convict)
+[![NPM](https://nodei.co/npm/convict.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/convict)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-convict/tree/alpha)|
 |--:|:--|
@@ -9,11 +12,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-convict/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-convict/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-convict/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-convict/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-convict/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-convict/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-convict/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-convict/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-convict/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-convict%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-convict/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-convict/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-convict/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-convict/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-convict%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-convict/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-convict/build/test-report.html](https://npmtest.github.io/node-npmtest-convict/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-convict/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-convict/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-convict/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-convict/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-convict/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-convict/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-convict/build/screenCapture.npmPackageListing.svg)
 
@@ -28,7 +37,6 @@
 {
     "author": {
         "name": "Lloyd Hilaiel",
-        "email": "lloyd@hilaiel.com",
         "url": "http://lloyd.io"
     },
     "browserify": {
@@ -84,47 +92,37 @@
     "main": "lib/convict.js",
     "maintainers": [
         {
-            "name": "6a68",
-            "email": "ohai@6a68.net"
+            "name": "6a68"
         },
         {
-            "name": "fmarier",
-            "email": "francois@fmarier.org"
+            "name": "fmarier"
         },
         {
-            "name": "lloyd",
-            "email": "lloyd@hilaiel.com"
+            "name": "lloyd"
         },
         {
-            "name": "ozten",
-            "email": "shout@ozten.com"
+            "name": "ozten"
         },
         {
-            "name": "rfkelly",
-            "email": "rfkelly@mozilla.com"
+            "name": "rfkelly"
         },
         {
-            "name": "seanmonstar",
-            "email": "sean.monstar@gmail.com"
+            "name": "seanmonstar"
         },
         {
-            "name": "stomlinson",
-            "email": "shane@shanetomlinson.com"
+            "name": "stomlinson"
         },
         {
-            "name": "vladikoff",
-            "email": "vlad@vladikoff.com"
+            "name": "vladikoff"
         },
         {
-            "name": "zaach",
-            "email": "zack.carter@gmail.com"
+            "name": "zaach"
         }
     ],
     "name": "convict",
     "optionalDependencies": {
         "varify": "0.2.0"
     },
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/mozilla/node-convict.git"
