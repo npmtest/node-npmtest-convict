@@ -1,6 +1,6 @@
 # npmtest-convict
 
-#### test coverage for  [convict (v3.0.0)](https://github.com/mozilla/node-convict)  [![npm package](https://img.shields.io/npm/v/npmtest-convict.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-convict) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-convict.svg)](https://travis-ci.org/npmtest/node-npmtest-convict)
+#### basic test coverage for  [convict (v3.0.0)](https://github.com/mozilla/node-convict)  [![npm package](https://img.shields.io/npm/v/npmtest-convict.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-convict) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-convict.svg)](https://travis-ci.org/npmtest/node-npmtest-convict)
 
 #### Unruly configuration management for Node.js
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-convict/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-convict/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-convict/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-convict/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-convict/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-convict/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-convict/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-convict/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-convict/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-convict/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-convict/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-convict/build/coverage.html/index.html)
 
@@ -141,7 +141,8 @@
         "test:coverage": "istanbul cover _mocha -- --check-leaks test/*-tests.js",
         "version": "./assert_changelog_ready $npm_package_version"
     },
-    "version": "3.0.0"
+    "version": "3.0.0",
+    "bin": {}
 }
 ```
 
